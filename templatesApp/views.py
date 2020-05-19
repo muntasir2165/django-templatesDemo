@@ -4,4 +4,5 @@ from django.shortcuts import render
 
 
 def renderTemplate(request):
-    return render(request, 'templatesApp/firstTemplate.html')
+    myDict = {"name": "Bharath"}
+    return render(request, 'templatesApp/firstTemplate.html', context=myDict)
